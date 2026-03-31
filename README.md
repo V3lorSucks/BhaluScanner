@@ -284,42 +284,6 @@ The scanner categorizes findings into four severity levels:
 
 ---
 
-## Building from Source
-
-### Prerequisites
-
-- **Windows 10/11 x64**
-- **Visual Studio 2022 Community** (or higher)
-- **Windows SDK 10.0.26100.0** (or compatible)
-- **MSVC v14.44+** toolset
-
-### Build Steps
-
-#### Method 1: Quick Build (Recommended)
-
-```batch
-quickbuild.bat
-```
-
-This script:
-1. Sets up VS environment variables
-2. Compiles `core.cpp` with optimizations
-3. Compiles resources (if available)
-4. Links everything into `DrValor-Scanner.exe`
-
-#### Method 2: Manual Build
-
-```batch
-# Set up environment (adjust paths for your VS installation)
-call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
-
-# Compile
-cl.exe /EHsc /O2 /W4 /permissive- /std:c++20 /Zc:__cplusplus /MD /I. /c core.cpp /Focore.obj
-
-# Link
-link.exe /OUT:DrValor-Scanner.exe core.obj resources.res ntdll.lib wintrust.lib crypt32.lib shlwapi.lib psapi.lib ws2_32.lib shell32.lib /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF
-```
-
 ### Compiler Flags Explained
 
 | Flag | Purpose |
