@@ -42,7 +42,6 @@ This scanner uses **legitimate security research techniques** that unfortunately
 
 #### Why It's Actually Safe
 
-✅ **Open Source** - All code is visible and auditable  
 ✅ **No Network Activity** - Doesn't phone home or exfiltrate data  
 ✅ **Local Only** - Runs entirely on your machine  
 ✅ **Transparent Purpose** - Clearly documented functionality  
@@ -252,10 +251,9 @@ Run these popular tools through VirusTotal:
 
 ### How to Verify Safety Yourself
 
-1. **Review the Code** - Everything is open source in this repository
-2. **Monitor Network** - Use Wireshark to confirm zero network activity
-3. **Check File Operations** - Use Process Monitor to see only read operations
-4. **Analyze Behavior** - Run in sandbox and observe no persistence/installation
+1. **Monitor Network** - Use Wireshark to confirm zero network activity
+2. **Check File Operations** - Use Process Monitor to see only read operations
+3. **Analyze Behavior** - Run in sandbox and observe no persistence/installation
 
 ---
 
