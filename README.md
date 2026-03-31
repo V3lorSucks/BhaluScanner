@@ -381,12 +381,6 @@ The authors are not responsible for misuse of this software. Always comply with 
 **Q: "The scanner won't start"**  
 A: Run as Administrator. The tool needs elevated privileges to access process memory.
 
-**Q: "Port 8080 already in use"**  
-A: Close other applications using port 8080, or modify the port in `core.cpp` line 226.
-
-**Q: "Build fails with missing headers"**  
-A: Ensure Windows SDK is properly installed and paths in build script match your version.
-
 **Q: "Antivirus quarantines the executable"**  
 A: Add an exclusion for the scanner folder. This is a false positive (see [VirusTotal section](#virus-total-false-positives-explanation)).
 
