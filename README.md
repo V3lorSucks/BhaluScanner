@@ -346,24 +346,6 @@ shell32.lib    - Shell operations
 
 ---
 
-## Project Structure
-
-```
-2distributable-main1/
-├── core.cpp              # Main entry point & HTTP server
-├── detection.hpp         # Detection engine & pattern matching
-├── memory_scan.hh        # SIMD memory scanning routines
-├── signature_check.hpp   # Digital signature verification
-├── syscall.h             # Direct syscall implementation
-├── utils.h               # Utility functions
-├── httplib.h             # Embedded HTTP library
-├── resources.rc          # Resource definitions
-├── quickbuild.bat        # Quick build script
-└── daktarbhalu-dashboard-main/  # Dashboard source
-```
-
----
-
 ## Performance Benchmarks
 
 | Metric | Value |
